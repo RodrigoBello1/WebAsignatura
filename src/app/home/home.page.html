@@ -1,34 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      AsignApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   
-  <form (ngSubmit)="onSubmit()">
-    <ion-item>
-      <ion-label position="floating">Nombre</ion-label>
-      <ion-input type="text" [(ngModel)]="nombre" name="nombre" required></ion-input>
-    </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Iniciar Sesión</ion-card-title>
+          </ion-card-header>
 
-    <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" 
-                 [(ngModel)]="password" 
-                 name="password"
-                 required
-                 errorText="Contraseña Incorrecta"
-                 >
+          <ion-card-content>
+            <form>
+              
+              <ion-item>
+                <ion-label position="floating">Usuario</ion-label>
+                <ion-input type="text" required></ion-input>
+              </ion-item>
 
-      </ion-input>
-    </ion-item>
+              
+              <ion-item>
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input type="password" required></ion-input>
+              </ion-item>
 
-    <ion-button expand="full" type="submit">
-      Enviar
-    </ion-button>
-  </form>
+              
+              <ion-item lines="none">
+                <ion-label>Recordar</ion-label>
+                <ion-checkbox slot="start"></ion-checkbox>
+              </ion-item>
+
+        
+              <ion-button expand="block" type="submit">Enviar</ion-button>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
 
 </ion-content>
