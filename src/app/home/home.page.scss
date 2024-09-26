@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f9;
+  background-color: #333;
   
 }
 .login-card {
@@ -19,7 +19,12 @@
   transform: translate(-50%, -50%);
 }
 
-
+.imagen-logo {
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
 
 .login-card-header {
   text-align: center;
@@ -27,11 +32,13 @@
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
+  background-color: #333;
 }
 
 ion-label {
-  color: #333;
-  font-size: 50px;
+  width: 10px;
+  color: #ffffff;
+  font-size: 20px;
   line-height: 1.5;
   transition: none; 
 }
@@ -41,13 +48,21 @@ ion-item {
 }
 
 ion-input {
- width: 267px;
+ width: 338px;
   min-height: 35px;
-  color: #333;
+  color: hsl(0, 0%, 0%);
   font-size: 18px;
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
   border-radius: 6px;
   
+}
+
+.eye{
+height: 20px;
+width: 20px;
+margin-right: 100px;
+
+margin-left: 100px;
 }
 
 ion-checkbox {
@@ -55,8 +70,9 @@ ion-checkbox {
   margin-right: 10px;
 }
 
-ion-item[lines="none"] {
+ion-item {
   margin-top: 10px;
+  background-color: #333;
 }
 
 ion-button {
@@ -82,10 +98,29 @@ ion-button {
   color: #f44336;
 }
 
+.Container-In{
+background-color: #333;
+}
+
 ion-content {
-  --background: url('../../assets/image/FondoPantalla.webp'); /* Ruta de la imagen */
-  background-size: cover; /* Para que la imagen cubra todo el área */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  --background: transparent !important;
+}
+
+.fuente-titulo{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: optional;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #0a0c3d;
+  position: relative;
+  left: 5px;
+}
+
+
+:host {
+  background-image: url(../../assets/img/Fondo_pagina.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 

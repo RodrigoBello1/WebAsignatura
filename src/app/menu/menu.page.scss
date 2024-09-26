@@ -1,0 +1,115 @@
+:host { 
+    background-image: url(../../assets/img/Fondo_pagina.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  ion-toolbar {
+    --background: #0a0c3d;
+  }
+  
+  ion-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  ion-content {
+    --background: transparent !important;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  ion-item {
+    background-color: #2500a17d;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  ion-icon {
+    color: #ffffff;
+  }
+  
+  ion-label {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  ion-button {
+    background-color: #0a0c3d;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  ion-button[color="danger"] {
+    background-color: #e53935;
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      background-color: #0a0c3d;
+    }
+  
+    ion-button {
+      background-color: #f4f4f9;
+      color: #333;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+  }
+  
+  /* Estilos adicionales para la imagen de bienvenida */
+  ion-content h1 {
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Cuadro de bienvenida */
+  .welcome-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%; /* Ajusta el ancho del cuadro */
+    
+    /* Aplicar la animación */
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* Animación */
+  @keyframes fadeInUp {
+    from {
+      opacity: 1;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(10); 
+    }
+  }
+  
+  .welcome-box h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-box p {
+    font-size: 18px;
+    color: #f4f4f4;
+  }
+  
+  ion-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  

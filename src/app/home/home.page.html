@@ -1,49 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      AsignApp
+
+  <ion-toolbar color="tertiary">
+    <img src="assets/img/agregar-usuario.png" alt="Logo" class="imagen-logo">
+    <ion-title class="fuente-titulo">
+      ‎ ‎ RegisApp
     </ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content class="page-login">
 
-  <ion-item>
-    <ion-button [routerLink]="['/asignatura']">Página uno: lista y botones</ion-button>
-  </ion-item>
 
-  <ion-item>
-    <ion-button [routerLink]="['/menu']">Página uno: lista y botones</ion-button>
-  </ion-item>
-
+<ion-content> 
+  
   <ion-card class="login-card">
     <ion-card class="Container-In">
     <ion-card-header class="login-card-header">
       Iniciar Sesión
     </ion-card-header>
-
-    <ion-card-content>
-      <form (ngSubmit)="onSubmit()">
-        <ion-item>
-          <ion-input [(ngModel)]="username" placeholder="‎ Usuario" label="‎ Ingrese su usuario" 
+    <ion-card-content class="Container-In">
+    <form class="Container-In" (ngSubmit)="onSubmit()">
+          <ion-input  [(ngModel)]="username" placeholder="‎ Usuario" label="‎ Ingrese su usuario" 
                      name="username" type="text" labelPlacement="floating" required></ion-input>
-        </ion-item>
-
-      
-
-        <ion-item>
-          <ion-input [(ngModel)]="password" placeholder="‎ Contraseña" label=" ‎ Ingrese su contraseña" 
-                     name="password" [type]="passwordType"  labelPlacement="floating" required></ion-input>
-          <ion-icon slot="end" 
-                    (click)="togglePasswordVisibility()" 
-                    [name]="passwordType === 'password' ? 'eye-off' : 'eye'"></ion-icon>
-        </ion-item>
-
-        
-        <ion-item lines="none">
+          <br>  
+          <ion-input [(ngModel)]="password" placeholder="‎ Contraseña" label=" ‎ Ingrese su contraseña" name="password" [type]="passwordType"  labelPlacement="floating" required>
+          <ion-icon class="eye" slot="end" (click)="togglePasswordVisibility()" [name]="passwordType === 'password' ? 'eye-off' : 'eye'"></ion-icon></ion-input>
+          <br>
           <ion-checkbox slot="start"></ion-checkbox>
           <ion-label>Recordar</ion-label>
-        </ion-item>
+       
 
         <ion-button expand="block" type="submit">Enviar</ion-button>
 
@@ -55,4 +37,5 @@
   </ion-card>
   
   </ion-card>
+  
 </ion-content>
