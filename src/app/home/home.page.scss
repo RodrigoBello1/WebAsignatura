@@ -111,7 +111,7 @@ ion-content {
   font: optional;
   font-size: 20px;
   font-weight: bolder;
-  color: #0a0c3d;
+  color: #ffffff;
   position: relative;
   left: 5px;
 }
@@ -124,3 +124,10 @@ ion-content {
   background-repeat: no-repeat;
 }
 
+ion-header {
+  --background: #0a0c3d;
+}
+
+ion-toolbar {
+  --background: #0a0c3d;
+}

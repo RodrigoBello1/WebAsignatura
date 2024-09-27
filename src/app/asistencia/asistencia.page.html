@@ -1,68 +1,111 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Asistencia</ion-title>
+    <img src="assets/img/agregar-usuario.png" alt="Logo" class="imagen-logo">
+    <ion-title class="fuente-titulo">Asistencia</ion-title>
+
+    <ion-icon class="LogOut" name="log-out-outline"  slot="end" (click)="logout()">
+          
+    </ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Asistencia</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-grid>
-    <!-- Encabezado de días -->
-    <ion-row style="border-bottom: 2px solid black;">
-      <ion-col size="3" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Estudiante</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Lunes</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Martes</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Miércoles</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Jueves</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Viernes</strong></ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Sábado</strong></ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Días Ausentes</strong></ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;"><strong>Asistencias</strong></ion-col>
+
+    <ion-row class="header-row">
+      <ion-col size="2"><strong>Asignaturas</strong></ion-col>
+      <ion-col size="1"><strong>Lunes</strong></ion-col>
+      <ion-col size="1"><strong>Martes</strong></ion-col>
+      <ion-col size="1"><strong>Miércoles</strong></ion-col>
+      <ion-col size="1"><strong>Jueves</strong></ion-col>
+      <ion-col size="1"><strong>Viernes</strong></ion-col>
+      <ion-col size="1"><strong>Sábado</strong></ion-col>
+      <ion-col size="2"><strong>Días Ausentes</strong></ion-col>
+      <ion-col size="2"><strong>Asistencias</strong></ion-col>
     </ion-row>
 
-    <!-- Registro de estudiante 1 -->
-    <ion-row style="border-bottom: 1px solid black;">
-      <ion-col size="3" style="background-color: #fff; border: 1px solid black; color: #0000FF;">Juan Pérez</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">2</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">4</ion-col>
+    <ion-row class="data-row">
+      <ion-col size="2">Matemáticas</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="2">2</ion-col>
+      <ion-col size="2">4</ion-col>
     </ion-row>
 
-    <!-- Registro de estudiante 2 -->
-    <ion-row style="border-bottom: 1px solid black;">
-      <ion-col size="3" style="background-color: #fff; border: 1px solid black; color: #0000FF;">María Gómez</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">2</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">4</ion-col>
+    <ion-row class="data-row">
+      <ion-col size="2">Física</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="2">2</ion-col>
+      <ion-col size="2">4</ion-col>
     </ion-row>
 
-    <!-- Registro de estudiante 3 -->
-    <ion-row style="border-bottom: 1px solid black;">
-      <ion-col size="3" style="background-color: #fff; border: 1px solid black; color: #0000FF;">Carlos Sánchez</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">A</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="1" style="background-color: #fff; border: 1px solid black; color: #0000FF;">P</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">2</ion-col>
-      <ion-col size="2" style="background-color: #fff; border: 1px solid black; color: #0000FF;">4</ion-col>
+    <ion-row class="data-row">
+      <ion-col size="2">Química</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="2">2</ion-col>
+      <ion-col size="2">4</ion-col>
     </ion-row>
+
+    <ion-row class="data-row">
+      <ion-col size="2">Historia</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">A</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="1">P</ion-col>
+      <ion-col size="2">2</ion-col>
+      <ion-col size="2">4</ion-col>
+    </ion-row>
+
+      <ion-row class="data-row">
+        <ion-col size="2">Inglés</ion-col>
+        <ion-col size="1">A</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">A</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="2">2</ion-col>
+        <ion-col size="2">4</ion-col>
+      </ion-row>
+
+      <ion-row class="data-row">
+        <ion-col size="2">Educación Física</ion-col>
+        <ion-col size="1">A</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">A</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="1">P</ion-col>
+        <ion-col size="2">2</ion-col>
+        <ion-col size="2">4</ion-col>
+      </ion-row>
+
+    
 
   </ion-grid>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

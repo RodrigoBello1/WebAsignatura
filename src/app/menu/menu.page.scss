@@ -5,6 +5,52 @@
     background-repeat: no-repeat;
   }
   
+  .LogOut {
+    background-color: #e53935;
+    color: #ffffff; 
+    border-radius: 8px; 
+    padding: 10px 15px; 
+    text-align: center; 
+    border: none; 
+    font-size: 16px; 
+    --box-shadow: none; 
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+  
+  ion-header {
+    --background: #0a0c3d;
+  }
+  
+  ion-toolbar {
+    --background: #0a0c3d;
+  }
+
+  .imagen-logo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 140px;
+  }
+
+  .imagen-logo-toolbar {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .fuente-titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: optional;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffffff;
+    position: relative;
+    left: 20px;
+  }
+
   ion-toolbar {
     --background: #0a0c3d;
   }
@@ -61,29 +107,25 @@
     }
   }
   
-  /* Estilos adicionales para la imagen de bienvenida */
   ion-content h1 {
-    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
   }
   
-  /* Cuadro de bienvenida */
   .welcome-box {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 12px;
     text-align: center;
     margin: 20px auto;
-    width: 80%; /* Ajusta el ancho del cuadro */
+    width: 80%;
     
-    /* Aplicar la animación */
     animation: fadeInUp 1.5s ease-out;
   }
   
-  /* Animación */
   @keyframes fadeInUp {
     from {
       opacity: 1;
